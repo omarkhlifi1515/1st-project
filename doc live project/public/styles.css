@@ -1,0 +1,62 @@
+ body {
+            font-family: 'Roboto', sans-serif; /* Google Docs default font */
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+
+        .editor-container {
+            width: 800px;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Toolbar Styling */
+        .toolbar {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            background: #fff;
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .toolbar button {
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            cursor: pointer;
+            padding: 6px 10px;
+            font-size: 14px;
+            color: #3c4043;
+        }
+
+        .toolbar button:hover {
+            background-color: #f1f3f4;
+            border-color: #dadce0;
+        }
+
+        .toolbar button.active {
+            background-color: #e8f0fe;
+            color: #1967d2;
+        }
+
+        /* Text Area Styling */
+        #doc-area {
+            min-height: 600px;
+            padding: 40px;
+            outline: none;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #000;
+        }
+
+        /* Placeholder effect */
+        #doc-area:empty:before {
+            content: "Start typing...";
+            color: #aaa;
+        }
+        
