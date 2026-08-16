@@ -1,0 +1,16 @@
+{
+  "name": "doc-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real-time collaborative document editor",
+  "scripts": {
+    "server": "cd collab/server && node index.js",
+    "client": "cd collab/client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "cd collab/server && npm install && cd ../client && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
